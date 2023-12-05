@@ -116,7 +116,7 @@
             keys[ev.key]=false;
         }
 
-        function isCollide(a,b){
+        function seawreck(a,b){
             aRect=a.getBoundingClientRect();
             bRect=b.getBoundingClientRect();
 
@@ -132,7 +132,7 @@
         function moveboat(ship){
             let other=document.querySelectorAll('.other');
             other.forEach(function(item){
-                if(isCollide(ship,item)){
+                if(seawreck(ship,item)){
                     console.log('HIT');
                     endGame();
                    
