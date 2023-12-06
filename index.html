@@ -86,7 +86,7 @@
         </div>
         <div class="StartScreen">
             <p>If you hit a naval mine, you lose</p>
-            <button onclick="Reset()">start</button>
+            <button onclick="start()">start</button>
         </div>
         <div class="GameArea">
 
@@ -179,10 +179,9 @@ if(player.start){
                     highest=player.score;
                 }
                 score.innerHTML="Your Score:"+ player.score+"<br><br>"+"Highest Score:"+highest;
-        }
+        
     
-        function Reset(){
-            highest=0;
+       
         }
         function start(){
             
